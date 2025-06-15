@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="0dp">
+
+        <!-- Top About Section (Blue) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="239dp"
+            android:background="#073B4C"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="0dp"
+            android:paddingTop="28dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="About This App"
+                android:textColor="#FFFFFF"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <!-- Developer Image -->
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="14dp">
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/circle_background"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/armi" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="-45dp"
+            android:layout_marginBottom="20dp"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="7dp"
+            android:background="#FAFAFA"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <!-- Student Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Student Name:"
+                        android:textStyle="bold"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.35"
+                        android:textAlignment="viewEnd"
+                        android:text="ARMI FAHIM BIN MOHD FAKRUDIN"
+                        android:textColor="#232323"
+                        android:textSize="15sp"
+                        android:maxLines="2"/>
+                </LinearLayout>
+
+                <!-- Student ID -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Student ID:"
+                        android:textStyle="bold"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.35"
+                        android:textAlignment="viewEnd"
+                        android:text="2023373965"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Group -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Group:"
+                        android:textStyle="bold"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.35"
+                        android:textAlignment="viewEnd"
+                        android:text="CDCS2405A"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <!-- Course -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Course:"
+                        android:textStyle="bold"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.35"
+                        android:textAlignment="viewEnd"
+                        android:text="ICT602 - Mobile Technology and Development"
+                        android:textColor="#232323"
+                        android:textSize="15sp"
+                        android:maxLines="3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tariff Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="20dp"
+            card_view:cardCornerRadius="18dp"
+            card_view:cardElevation="7dp"
+            android:background="#FAFAFA"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp"
+                android:gravity="center_horizontal">
+
+                <!-- Tariff Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tariff Rates"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#073B4C"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Tariff Table -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxWidth="350dp"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="2dp"
+                    android:background="#F5F5F5">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1"
+                        android:padding="12dp">
+
+                        <!-- Header Row -->
+                        <TableRow>
+                            <TextView
+                                android:text="Block"
+                                android:textStyle="bold"
+                                android:padding="6dp"
+                                android:background="#E0E0E0"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:text="kWh Range"
+                                android:textStyle="bold"
+                                android:padding="6dp"
+                                android:background="#E0E0E0"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:text="Rate (sen/kWh)"
+                                android:textStyle="bold"
+                                android:padding="6dp"
+                                android:background="#E0E0E0"
+                                android:textSize="14sp" />
+                        </TableRow>
+
+                        <!-- Block Rows -->
+                        <TableRow>
+                            <TextView android:text="1" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="1 - 200" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="21.8" android:padding="6dp" android:textSize="14sp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView android:text="2" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="201 - 300" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="33.4" android:padding="6dp" android:textSize="14sp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView android:text="3" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="301 - 600" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="51.6" android:padding="6dp" android:textSize="14sp" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView android:text="4" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="601 - 900" android:padding="6dp" android:textSize="14sp" />
+                            <TextView android:text="54.6" android:padding="6dp" android:textSize="14sp" />
+                        </TableRow>
+                    </TableLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Github Button -->
+        <Button
+            android:id="@+id/btnGitHub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Source Code Here"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@drawable/ic_github"
+            android:backgroundTint="#073B4C"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Copyright -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2025 All rights reserved."
+            android:textSize="13sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electricity Bill Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#073B4C"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Year Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFD166"
+        android:padding="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#232323"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtDetailYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025"
+            android:textSize="16sp"
+            android:textColor="#232323"
+            android:layout_marginStart="12dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Month Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#43AA8B"
+        android:padding="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/txtDetailMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="June"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:layout_marginStart="12dp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="18dp"
+        card_view:cardElevation="6dp"
+        android:background="#FAFAFA"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:dividerPadding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Unit Used"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#232323" />
+
+                <TextView
+                    android:id="@+id/txtDetailUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="350 kWh"
+                    android:textSize="16sp"
+                    android:textColor="#232323" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Charges"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#232323" />
+
+                <TextView
+                    android:id="@+id/txtDetailTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 120.00"
+                    android:textSize="16sp"
+                    android:textColor="#EF476F"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rebate"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#232323" />
+
+                <TextView
+                    android:id="@+id/txtDetailRebate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5%"
+                    android:textSize="16sp"
+                    android:textColor="#43AA8B"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Final Cost"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#073B4C" />
+
+                <TextView
+                    android:id="@+id/txtDetailFinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 114.00"
+                    android:textSize="18sp"
+                    android:textColor="#073B4C"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

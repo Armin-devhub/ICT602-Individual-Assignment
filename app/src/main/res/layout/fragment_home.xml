@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:id="@+id/divYearMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="18dp"
+        android:padding="0dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#FFD166"
+            android:padding="16dp"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:text="Select Year:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#232323"/>
+
+            <Spinner
+                android:id="@+id/spinnerYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#43AA8B"
+            android:padding="16dp"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:text="Select Month:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#fff"/>
+
+            <Spinner
+                android:id="@+id/spinnerMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divElectricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#577590"
+        android:padding="16dp"
+        android:layout_below="@id/divYearMonth"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="18dp"
+        android:elevation="4dp"
+        android:clipToOutline="true">
+
+        <TextView
+            android:text="Enter Electricity Unit (kWh):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/editUnit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="number"
+            android:hint="e.g. 350"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/divRebate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#EF476F"
+        android:padding="16dp"
+        android:layout_below="@id/divElectricity"
+        android:layout_marginTop="0dp"
+        android:elevation="4dp"
+        android:clipToOutline="true">
+
+        <TextView
+            android:text="Rebate Percentage (0% - 5%):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <RadioGroup
+            android:id="@+id/radioRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0%"
+                android:checked="true"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1%"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2%"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3%"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4%"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5%"
+                android:textColor="#fff"
+                android:textSize="13sp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#073B4C"
+        android:textColor="#fff"
+        android:elevation="6dp"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>
